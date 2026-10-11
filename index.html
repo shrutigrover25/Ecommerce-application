@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f5f4ef">
+	<meta name="description" content="Considered gear for getting outside. Explore the latest from Fieldwork Supply.">
+	<title>Fieldwork Supply — Get out there.</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="announcement"><span>Good gear. Better outside.</span><a href="#shop">Free shipping on orders over $75 <span aria-hidden="true">↗</span></a></div>
+	<header class="site-header">
+		<a class="wordmark" href="#top" aria-label="Fieldwork Supply home"><span class="brand-mark" aria-hidden="true">f.</span><span>FIELDWORK<span class="wordmark-light"> SUPPLY</span></span></a>
+		<nav class="main-nav" aria-label="Main navigation">
+			<a href="#shop" data-nav-category="All">Shop all</a>
+			<a href="#shop" data-nav-category="Packs">Packs</a>
+			<a href="#shop" data-nav-category="Apparel">Apparel</a>
+			<a href="#shop" data-nav-category="Accessories">Accessories</a>
+		</nav>
+		<div class="header-actions">
+			<label class="search-box"><span class="sr-only">Search products</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg><input id="search-input" type="search" placeholder="Search gear" autocomplete="off"></label>
+			<button class="icon-button cart-trigger" id="open-cart" aria-label="Open shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="cart-label">Bag</span><span class="cart-count" id="cart-count">0</span></button>
+			<button class="icon-button mobile-menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+		</div>
+	</header>
+
+	<main id="top">
+		<section class="hero" aria-labelledby="hero-title">
+			<img class="hero-image" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2200&q=85" alt="A quiet trail through a sunlit mountain forest">
+			<div class="hero-shade"></div>
+			<div class="hero-content"><p class="eyebrow hero-eyebrow"><span class="live-dot"></span> THE OUTSIDE IS OPEN</p><h1 id="hero-title">Less stuff.<br><span>More out there.</span></h1><p class="hero-copy">Thoughtful essentials for the long way round, the early start, and everything beyond the trailhead.</p><a class="button button-lime" href="#shop">Find your next favorite <span aria-hidden="true">↗</span></a></div>
+			<div class="hero-caption"><span>FIELD NOTES&nbsp; / &nbsp;NO. 024</span><span>46° 51' N&nbsp; 9° 31' E</span></div>
+			<div class="hero-index"><span>01</span><span class="index-line"></span><span>03</span></div>
+		</section>
+
+		<section class="benefits" aria-label="Shopping benefits"><div><span class="benefit-icon">✳</span><span>Made for the long haul</span></div><div><span class="benefit-icon">↗</span><span>Free shipping over $75</span></div><div><span class="benefit-icon">↺</span><span>30-day easy returns</span></div><div class="benefit-note">GO FAR. PACK LIGHT.</div></section>
+
+		<section class="shop-section" id="shop">
+			<div class="section-heading"><div><p class="eyebrow">A FEW GOOD THINGS</p><h2>Gear up. Get out.</h2></div><p class="section-note">Built for real life outside.<br>Ready when you are.</p></div>
+			<div class="shop-toolbar"><div class="category-list" role="group" aria-label="Filter by category"><button class="category-chip is-active" data-category="All">Everything <span class="category-total" id="product-total">8</span></button><button class="category-chip" data-category="Packs">Packs</button><button class="category-chip" data-category="Apparel">Apparel</button><button class="category-chip" data-category="Accessories">Accessories</button></div><label class="sort-control"><span>Sort:</span><select id="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Name</option></select></label></div>
+			<div class="product-grid" id="product-grid" aria-live="polite"></div>
+			<div class="empty-state" id="empty-state" hidden><span>Nothing on this trail.</span><p>Try a different search or category.</p><button class="text-button" id="clear-filters">Clear filters <span aria-hidden="true">↗</span></button></div>
+			<div class="shop-footer"><span>MADE TO MOVE WITH YOU</span><span id="results-label">Showing all gear</span></div>
+		</section>
+
+		<section class="field-note"><div class="note-image"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85" alt="Mountain lake reflecting the peaks at sunrise" loading="lazy"></div><div class="note-copy"><p class="eyebrow">A NOTE FROM THE FIELD</p><h2>Take the<br>scenic route.</h2><p>We believe the best things happen a little farther out. Our kit is made to help you get there, stay awhile, and leave the place better than you found it.</p><a href="#shop" class="text-button">A little about us <span aria-hidden="true">↗</span></a><span class="note-number">FW—024</span></div></section>
+	</main>
+
+	<footer class="site-footer"><a class="wordmark footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">f.</span><span>FIELDWORK<span class="wordmark-light"> SUPPLY</span></span></a><p>Good gear. Better outside.</p><span class="footer-copy">© 2025 FIELDWORK SUPPLY CO.</span></footer>
+
+	<div class="overlay" id="cart-overlay" hidden></div>
+	<aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+		<div class="drawer-header"><div><p class="eyebrow">YOUR NEXT ADVENTURE</p><h2 id="cart-title">Your bag <span id="drawer-count">(0)</span></h2></div><button class="icon-button close-cart" id="close-cart" aria-label="Close shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div>
+		<div class="cart-items" id="cart-items"></div>
+		<div class="cart-empty" id="cart-empty"><span class="empty-bag-icon">↗</span><p>Your bag is taking the scenic route.</p><button class="button button-dark" id="continue-shopping">Explore the gear</button></div>
+		<div class="drawer-footer" id="drawer-footer" hidden><div class="shipping-progress"><div class="shipping-progress-copy" id="shipping-message">You're $75 away from free shipping.</div><div class="progress-track"><span id="shipping-progress"></span></div></div><div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div><p class="tax-note">Shipping and taxes calculated at checkout.</p><button class="button button-dark checkout-button" id="checkout-button">Continue to checkout <span aria-hidden="true">↗</span></button><button class="continue-link" id="continue-shopping-footer">Keep looking</button></div>
+	</aside>
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
